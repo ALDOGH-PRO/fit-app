@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Rutinas from "./pages/Rutinas";
 import Nutricion from "./pages/Nutricion";
 import Metas from "./pages/Metas";
@@ -13,9 +13,7 @@ const [objetivo, setObjetivo] = useState("");
 const [mostrarObjetivo, setMostrarObjetivo] = useState(false);
 const [mostrarDatos, setMostrarDatos] = useState(false);
 
-const [edad, setEdad] = useState("");
-const [altura, setAltura] = useState("");
-const [sexo, setSexo] = useState("");
+
   const [peso, setPeso] = useState("");
   const [calorias, setCalorias] = useState("");
   const [meta, setMeta] = useState("");
@@ -112,10 +110,7 @@ if (mostrarDatos) {
         const alturaActual = Number(datos.altura);
         const edadActual = Number(datos.edad);
 
-        setPeso(datos.peso);
-        setAltura(datos.altura);
-        setEdad(datos.edad);
-        setSexo(datos.sexo);
+        
 
         // Fórmula Mifflin-St Jeor
         let tmb = 0;

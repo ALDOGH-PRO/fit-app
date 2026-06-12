@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 
 function Nutricion({ volver, calorias, objetivo, peso }) {
   const pesoNum = Number(peso) || 70;
