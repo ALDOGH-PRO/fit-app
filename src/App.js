@@ -109,7 +109,7 @@ if (mostrarDatos) {
         const pesoActual = Number(datos.peso);
         const alturaActual = Number(datos.altura);
         const edadActual = Number(datos.edad);
-
+setPeso(datos.peso);
         
 
         // Fórmula Mifflin-St Jeor
